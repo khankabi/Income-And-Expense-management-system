@@ -10,3 +10,7 @@ C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income A
 C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income And Expense Tracking System.pdb
 C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.Income.resources
 C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.Expense.resources
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.Login.resources
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.Users.resources
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.viewExpense.resources
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.ViewIncome.resources

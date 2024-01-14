@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AddressTb = new System.Windows.Forms.TextBox();
@@ -46,21 +45,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(160, 450);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 32);
-            this.button2.TabIndex = 93;
-            this.button2.Text = "Back";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // AddBtn
             // 
             this.AddBtn.BackColor = System.Drawing.Color.Turquoise;
@@ -68,7 +52,7 @@
             this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddBtn.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddBtn.ForeColor = System.Drawing.Color.Black;
-            this.AddBtn.Location = new System.Drawing.Point(30, 450);
+            this.AddBtn.Location = new System.Drawing.Point(92, 434);
             this.AddBtn.Name = "AddBtn";
             this.AddBtn.Size = new System.Drawing.Size(95, 32);
             this.AddBtn.TabIndex = 89;
@@ -227,7 +211,6 @@
             this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PhoneTb);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AddressTb);
@@ -245,8 +228,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox AddressTb;
