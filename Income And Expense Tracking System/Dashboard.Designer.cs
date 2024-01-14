@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -70,10 +71,9 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -127,56 +127,20 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(218, 628);
+            this.panel1.Size = new System.Drawing.Size(218, 667);
             this.panel1.TabIndex = 0;
             // 
-            // label4
+            // label33
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(67, 433);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 22);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "View Income";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(67, 355);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 22);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Expense";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(67, 262);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 22);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Income";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(67, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 22);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Dashboard";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label33.AutoSize = true;
+            this.label33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label33.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(67, 446);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(146, 22);
+            this.label33.TabIndex = 11;
+            this.label33.Text = "View Expense";
             // 
             // panel2
             // 
@@ -199,6 +163,54 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Logout";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(67, 378);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 22);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "View Income";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(76, 310);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 22);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Expense";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(76, 239);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 22);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Income";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(67, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 22);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Dashboard";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Turquoise;
@@ -212,28 +224,16 @@
             this.panel3.Size = new System.Drawing.Size(336, 189);
             this.panel3.TabIndex = 6;
             // 
-            // label6
+            // label9
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(17, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Total Income";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(17, 55);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 17);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Amout In Rupees";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(17, 151);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(180, 17);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Last Transaction Date";
             // 
             // label8
             // 
@@ -247,16 +247,28 @@
             this.label8.Text = "Transaction Number";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(17, 151);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(180, 17);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "Last Transaction Date";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(17, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(143, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Amout In Rupees";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(17, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Total Income";
             // 
             // panel4
             // 
@@ -582,17 +594,6 @@
             this.panel13.Size = new System.Drawing.Size(168, 82);
             this.panel13.TabIndex = 22;
             // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Yellow;
-            this.label30.Location = new System.Drawing.Point(17, 55);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(138, 17);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "Amout In Rupees";
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -604,6 +605,17 @@
             this.label31.TabIndex = 12;
             this.label31.Text = "Best Expense Category";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Yellow;
+            this.label30.Location = new System.Drawing.Point(17, 55);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(138, 17);
+            this.label30.TabIndex = 11;
+            this.label30.Text = "Amout In Rupees";
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -614,18 +626,6 @@
             this.label32.Size = new System.Drawing.Size(472, 24);
             this.label32.TabIndex = 23;
             this.label32.Text = "INCOME AND EXPENSE TRACKING SYSTEM";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label33.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(67, 520);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(146, 22);
-            this.label33.TabIndex = 11;
-            this.label33.Text = "View Expense";
             // 
             // pictureBox9
             // 
@@ -661,7 +661,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.swhiteicon;
-            this.pictureBox10.Location = new System.Drawing.Point(12, 498);
+            this.pictureBox10.Location = new System.Drawing.Point(12, 431);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(45, 46);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -681,7 +681,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.iwhiteicon;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 251);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 228);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(45, 46);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -691,7 +691,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.ewhiteicon;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 341);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 300);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 46);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -701,7 +701,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.swhiteicon;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 422);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 366);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(45, 46);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -732,7 +732,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1115, 628);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1131, 667);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel9);
@@ -747,6 +748,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

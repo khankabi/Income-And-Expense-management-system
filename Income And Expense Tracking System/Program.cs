@@ -16,7 +16,7 @@ namespace Income_And_Expense_Tracking_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
+            Application.Run(new Income());
         }
     }
 }
