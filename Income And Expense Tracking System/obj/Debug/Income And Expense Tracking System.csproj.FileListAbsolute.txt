@@ -1,0 +1,10 @@
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\bin\Debug\Income And Expense Tracking System.exe.config
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\bin\Debug\Income And Expense Tracking System.exe
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\bin\Debug\Income And Expense Tracking System.pdb
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income And Expense Tracking System.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.Dashboard.resources
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income_And_Expense_Tracking_System.Properties.Resources.resources
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income And Expense Tracking System.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income And Expense Tracking System.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income And Expense Tracking System.exe
+C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\Income And Expense Tracking System\obj\Debug\Income And Expense Tracking System.pdb
