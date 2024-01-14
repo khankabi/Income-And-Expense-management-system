@@ -27,12 +27,15 @@ namespace Income_And_Expense_Tracking_System
             GetMaxExp();
             GetMinInc();
             GetMinExp();
+            GetBalance();
+            GetMaxExpCat();
+            GetMaxIncCat();
 
 
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
 
-
+        int Inc, Exp;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -91,6 +94,7 @@ namespace Income_And_Expense_Tracking_System
             SqlDataAdapter sda = new SqlDataAdapter("select Sum(IncAmt) from IncomeTbl where IncUser='"+Login.User+"'",Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            Inc = Convert.ToInt32(dt.Rows[0][0].ToString());
             TotIncLbl.Text = "Rs "+dt.Rows[0][0].ToString();  
             Con.Close();
         }
@@ -110,6 +114,7 @@ namespace Income_And_Expense_Tracking_System
             DataTable dt = new DataTable();
             sda.Fill(dt);
             DateIncLbl.Text = dt.Rows[0][0].ToString();
+            LastIncLbl.Text = dt.Rows[0][0].ToString();
             Con.Close();
         }
         private void GetMaxInc()
@@ -130,12 +135,27 @@ namespace Income_And_Expense_Tracking_System
             MinIncLbl.Text = "Rs " + dt.Rows[0][0].ToString();
             Con.Close();
         }
+        private void GetMaxIncCat()
+        {
+            Con.Open();
+            string InnerQuery = "select Max(IncAmt) from IncomeTbl";
+            DataTable dt1 = new DataTable();
+            SqlDataAdapter sda1 = new SqlDataAdapter(InnerQuery, Con);
+            sda1.Fill(dt1);
+            string Query = "select IncCat from IncomeTbl where IncAmt='" + dt1.Rows[0][0].ToString() + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            BestIncCatLbl.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
         private void GetTotExp()
         {
             Con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Sum(ExpAmt) from ExpenseTbl where ExpUser='" + Login.User + "'", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            Exp = Convert.ToInt32(dt.Rows[0][0].ToString());
             TotExpLbl.Text = "Rs " + dt.Rows[0][0].ToString();
             Con.Close();
         }
@@ -155,6 +175,7 @@ namespace Income_And_Expense_Tracking_System
             DataTable dt = new DataTable();
             sda.Fill(dt);
             DateExpLbl.Text = dt.Rows[0][0].ToString();
+            LastExpLbl.Text = dt.Rows[0][0].ToString();
             Con.Close();
         }
         private void GetMaxExp()
@@ -174,6 +195,28 @@ namespace Income_And_Expense_Tracking_System
             sda.Fill(dt);
             MinExpLbl.Text = "Rs " + dt.Rows[0][0].ToString();
             Con.Close();
+        }
+        private void GetMaxExpCat()
+        {
+            Con.Open();
+            string InnerQuery = "select Max(ExpAmt) from ExpenseTbl";
+            DataTable dt1 = new DataTable();
+            SqlDataAdapter sda1 = new SqlDataAdapter(InnerQuery, Con);
+            sda1.Fill(dt1);
+            string Query = "select ExpCat from ExpenseTbl where ExpAmt='" + dt1.Rows[0][0].ToString()+"'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            BestExpCatLbl.Text =dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+
+
+
+        private void GetBalance()
+        {
+            double Bal = Inc - Exp;
+            BalanceLbl.Text = "Rs "+ Bal;
         }
         private void pictureBox6_Click(object sender, EventArgs e)
         {
