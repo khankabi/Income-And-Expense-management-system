@@ -46,13 +46,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.TotIncLbl = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.TotExpLbl = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -84,6 +83,10 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.NumIncLbl = new System.Windows.Forms.Label();
+            this.DateIncLbl = new System.Windows.Forms.Label();
+            this.NumExpLbl = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel2.SuspendLayout();
@@ -288,9 +291,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Turquoise;
+            this.panel3.Controls.Add(this.DateIncLbl);
+            this.panel3.Controls.Add(this.NumIncLbl);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.TotIncLbl);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Location = new System.Drawing.Point(252, 77);
@@ -305,33 +310,33 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(17, 151);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(180, 17);
+            this.label9.Size = new System.Drawing.Size(139, 17);
             this.label9.TabIndex = 13;
-            this.label9.Text = "Last Transaction Date";
+            this.label9.Text = "Last Transaction";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(17, 109);
+            this.label8.Location = new System.Drawing.Point(17, 93);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(170, 17);
+            this.label8.Size = new System.Drawing.Size(110, 17);
             this.label8.TabIndex = 12;
-            this.label8.Text = "Transaction Number";
+            this.label8.Text = "Transactions";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label7
+            // TotIncLbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(17, 55);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 17);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Amout In Rupees";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.TotIncLbl.AutoSize = true;
+            this.TotIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotIncLbl.ForeColor = System.Drawing.Color.Black;
+            this.TotIncLbl.Location = new System.Drawing.Point(17, 55);
+            this.TotIncLbl.Name = "TotIncLbl";
+            this.TotIncLbl.Size = new System.Drawing.Size(143, 17);
+            this.TotIncLbl.TabIndex = 11;
+            this.TotIncLbl.Text = "Amout In Rupees";
+            this.TotIncLbl.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -357,9 +362,10 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Turquoise;
+            this.panel4.Controls.Add(this.NumExpLbl);
+            this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.TotExpLbl);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Location = new System.Drawing.Point(252, 300);
@@ -378,27 +384,16 @@
             this.label10.TabIndex = 13;
             this.label10.Text = "Last Transaction Date";
             // 
-            // label11
+            // TotExpLbl
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(17, 109);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(170, 17);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Transaction Number";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(17, 55);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(143, 17);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Amout In Rupees";
+            this.TotExpLbl.AutoSize = true;
+            this.TotExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotExpLbl.ForeColor = System.Drawing.Color.Black;
+            this.TotExpLbl.Location = new System.Drawing.Point(17, 55);
+            this.TotExpLbl.Name = "TotExpLbl";
+            this.TotExpLbl.Size = new System.Drawing.Size(143, 17);
+            this.TotExpLbl.TabIndex = 11;
+            this.TotExpLbl.Text = "Amout In Rupees";
             // 
             // label13
             // 
@@ -733,6 +728,50 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // NumIncLbl
+            // 
+            this.NumIncLbl.AutoSize = true;
+            this.NumIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumIncLbl.ForeColor = System.Drawing.Color.Black;
+            this.NumIncLbl.Location = new System.Drawing.Point(25, 120);
+            this.NumIncLbl.Name = "NumIncLbl";
+            this.NumIncLbl.Size = new System.Drawing.Size(71, 17);
+            this.NumIncLbl.TabIndex = 14;
+            this.NumIncLbl.Text = "Number";
+            // 
+            // DateIncLbl
+            // 
+            this.DateIncLbl.AutoSize = true;
+            this.DateIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateIncLbl.ForeColor = System.Drawing.Color.Black;
+            this.DateIncLbl.Location = new System.Drawing.Point(162, 151);
+            this.DateIncLbl.Name = "DateIncLbl";
+            this.DateIncLbl.Size = new System.Drawing.Size(110, 17);
+            this.DateIncLbl.TabIndex = 15;
+            this.DateIncLbl.Text = "Transactions";
+            // 
+            // NumExpLbl
+            // 
+            this.NumExpLbl.AutoSize = true;
+            this.NumExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumExpLbl.ForeColor = System.Drawing.Color.Black;
+            this.NumExpLbl.Location = new System.Drawing.Point(25, 122);
+            this.NumExpLbl.Name = "NumExpLbl";
+            this.NumExpLbl.Size = new System.Drawing.Size(71, 17);
+            this.NumExpLbl.TabIndex = 16;
+            this.NumExpLbl.Text = "Number";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(17, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 17);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Transactions";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -816,15 +855,14 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label TotIncLbl;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label TotExpLbl;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Panel panel5;
@@ -857,6 +895,10 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label ViewExpLbl;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label NumIncLbl;
+        private System.Windows.Forms.Label DateIncLbl;
+        private System.Windows.Forms.Label NumExpLbl;
+        private System.Windows.Forms.Label label4;
     }
 }
 
