@@ -364,6 +364,7 @@
             // DashLbl
             // 
             this.DashLbl.AutoSize = true;
+            this.DashLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DashLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashLbl.ForeColor = System.Drawing.Color.White;
             this.DashLbl.Location = new System.Drawing.Point(67, 170);

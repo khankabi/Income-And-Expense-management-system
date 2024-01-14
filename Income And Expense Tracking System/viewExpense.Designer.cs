@@ -156,6 +156,7 @@
             // dashboardLbl
             // 
             this.dashboardLbl.AutoSize = true;
+            this.dashboardLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dashboardLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboardLbl.ForeColor = System.Drawing.Color.White;
             this.dashboardLbl.Location = new System.Drawing.Point(67, 170);
