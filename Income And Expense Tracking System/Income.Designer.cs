@@ -34,30 +34,30 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ViewIncLbl = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ExpLbl = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.IncNameTb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.IncAmtTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.IncDescTb = new System.Windows.Forms.TextBox();
+            this.CatCb = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.IncDate = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -74,7 +74,7 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel13.BackColor = System.Drawing.Color.LightCoral;
             this.panel13.Controls.Add(this.label31);
             this.panel13.Controls.Add(this.label30);
             this.panel13.Location = new System.Drawing.Point(308, 189);
@@ -111,9 +111,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.ViewIncLbl);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.ExpLbl);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -136,6 +136,7 @@
             this.label33.Size = new System.Drawing.Size(146, 22);
             this.label33.TabIndex = 21;
             this.label33.Text = "View Expense";
+            this.label33.Click += new System.EventHandler(this.label33_Click);
             // 
             // panel2
             // 
@@ -146,6 +147,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(122, 38);
             this.panel2.TabIndex = 6;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.logouticonw;
+            this.pictureBox7.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
             // 
             // label5
             // 
@@ -158,29 +169,71 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Logout";
             // 
-            // label4
+            // pictureBox10
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(67, 378);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 22);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "View Income";
+            this.pictureBox10.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.swhiteicon;
+            this.pictureBox10.Location = new System.Drawing.Point(12, 431);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 20;
+            this.pictureBox10.TabStop = false;
             // 
-            // label3
+            // pictureBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(76, 310);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 22);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Expense";
+            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.eyes_doodles_art_127935_1366x768;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(173, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ViewIncLbl
+            // 
+            this.ViewIncLbl.AutoSize = true;
+            this.ViewIncLbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ViewIncLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewIncLbl.ForeColor = System.Drawing.Color.White;
+            this.ViewIncLbl.Location = new System.Drawing.Point(67, 378);
+            this.ViewIncLbl.Name = "ViewIncLbl";
+            this.ViewIncLbl.Size = new System.Drawing.Size(137, 22);
+            this.ViewIncLbl.TabIndex = 19;
+            this.ViewIncLbl.Text = "View Income";
+            this.ViewIncLbl.Click += new System.EventHandler(this.ViewIncLbl_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.dwhiteicone;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 158);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // ExpLbl
+            // 
+            this.ExpLbl.AutoSize = true;
+            this.ExpLbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpLbl.ForeColor = System.Drawing.Color.White;
+            this.ExpLbl.Location = new System.Drawing.Point(76, 310);
+            this.ExpLbl.Name = "ExpLbl";
+            this.ExpLbl.Size = new System.Drawing.Size(92, 22);
+            this.ExpLbl.TabIndex = 18;
+            this.ExpLbl.Text = "Expense";
+            this.ExpLbl.Click += new System.EventHandler(this.ExpLbl_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.swhiteicon;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 366);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
             // 
             // label2
             // 
@@ -194,9 +247,20 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Income";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.ewhiteicon;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 300);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(67, 170);
@@ -204,15 +268,26 @@
             this.label1.Size = new System.Drawing.Size(118, 22);
             this.label1.TabIndex = 16;
             this.label1.Text = "Dashboard";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // pictureBox5
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(622, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 26);
-            this.textBox1.TabIndex = 38;
+            this.pictureBox5.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.iblackicon;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 228);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 15;
+            this.pictureBox5.TabStop = false;
+            // 
+            // IncNameTb
+            // 
+            this.IncNameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IncNameTb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncNameTb.Location = new System.Drawing.Point(622, 189);
+            this.IncNameTb.Name = "IncNameTb";
+            this.IncNameTb.Size = new System.Drawing.Size(194, 26);
+            this.IncNameTb.TabIndex = 38;
             // 
             // label6
             // 
@@ -236,14 +311,14 @@
             this.label7.TabIndex = 39;
             this.label7.Text = "Amount";
             // 
-            // textBox2
+            // IncAmtTb
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(622, 277);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 26);
-            this.textBox2.TabIndex = 40;
+            this.IncAmtTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IncAmtTb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncAmtTb.Location = new System.Drawing.Point(622, 273);
+            this.IncAmtTb.Name = "IncAmtTb";
+            this.IncAmtTb.Size = new System.Drawing.Size(194, 26);
+            this.IncAmtTb.TabIndex = 40;
             // 
             // label8
             // 
@@ -256,24 +331,31 @@
             this.label8.TabIndex = 41;
             this.label8.Text = "Income Description";
             // 
-            // textBox3
+            // IncDescTb
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(622, 367);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(194, 66);
-            this.textBox3.TabIndex = 42;
+            this.IncDescTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IncDescTb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncDescTb.Location = new System.Drawing.Point(622, 367);
+            this.IncDescTb.Multiline = true;
+            this.IncDescTb.Name = "IncDescTb";
+            this.IncDescTb.Size = new System.Drawing.Size(194, 66);
+            this.IncDescTb.TabIndex = 42;
             // 
-            // comboBox1
+            // CatCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(868, 185);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 26);
-            this.comboBox1.TabIndex = 43;
+            this.CatCb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatCb.FormattingEnabled = true;
+            this.CatCb.Items.AddRange(new object[] {
+            "Salary",
+            "Business",
+            "PocketMoney",
+            "Trading",
+            "Tips",
+            "Other"});
+            this.CatCb.Location = new System.Drawing.Point(868, 185);
+            this.CatCb.Name = "CatCb";
+            this.CatCb.Size = new System.Drawing.Size(189, 26);
+            this.CatCb.TabIndex = 43;
             // 
             // label9
             // 
@@ -286,14 +368,14 @@
             this.label9.TabIndex = 44;
             this.label9.Text = "Categories";
             // 
-            // dateTimePicker1
+            // IncDate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(868, 273);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(189, 26);
-            this.dateTimePicker1.TabIndex = 45;
+            this.IncDate.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.IncDate.Location = new System.Drawing.Point(868, 273);
+            this.IncDate.Name = "IncDate";
+            this.IncDate.Size = new System.Drawing.Size(189, 26);
+            this.IncDate.TabIndex = 45;
             // 
             // label10
             // 
@@ -333,76 +415,6 @@
             this.label11.TabIndex = 48;
             this.label11.Text = "INCOME DETAILS";
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.logouticonw;
-            this.pictureBox7.Location = new System.Drawing.Point(14, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(29, 30);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.swhiteicon;
-            this.pictureBox10.Location = new System.Drawing.Point(12, 431);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 20;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.eyes_doodles_art_127935_1366x768;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.dwhiteicone;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 158);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.swhiteicon;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 366);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.ewhiteicon;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 300);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.iblackicon;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 228);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(45, 46);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 15;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -413,6 +425,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // Income
             // 
@@ -423,15 +436,15 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.IncDate);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CatCb);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.IncDescTb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.IncAmtTb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IncNameTb);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox6);
@@ -469,23 +482,23 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox IncNameTb;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox IncAmtTb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox IncDescTb;
+        private System.Windows.Forms.ComboBox CatCb;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker IncDate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ViewIncLbl;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label ExpLbl;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox4;

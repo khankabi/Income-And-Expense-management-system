@@ -41,5 +41,38 @@ namespace Income_And_Expense_Tracking_System
         {
 
         }
+
+        private void IncLbl_Click(object sender, EventArgs e)
+        {
+            Income Obj = new Income();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Expense Obj = new Expense();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void ViewIncLbl_Click(object sender, EventArgs e)
+        {
+            ViewIncome Obj = new ViewIncome();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void ViewExpLbl_Click(object sender, EventArgs e)
+        {
+            viewExpense Obj = new viewExpense();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }

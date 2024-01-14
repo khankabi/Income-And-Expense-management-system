@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ExpenseDGV = new System.Windows.Forms.DataGridView();
             this.label33 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ViewIncomeLbl = new System.Windows.Forms.Label();
+            this.ExpenseLbl = new System.Windows.Forms.Label();
+            this.incomeLbl = new System.Windows.Forms.Label();
+            this.dashboardLbl = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpenseDGV)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // ExpenseDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(248, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(839, 413);
-            this.dataGridView1.TabIndex = 72;
+            this.ExpenseDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ExpenseDGV.Location = new System.Drawing.Point(285, 149);
+            this.ExpenseDGV.Name = "ExpenseDGV";
+            this.ExpenseDGV.Size = new System.Drawing.Size(744, 362);
+            this.ExpenseDGV.TabIndex = 72;
             // 
             // label33
             // 
@@ -93,6 +93,16 @@
             this.panel2.Size = new System.Drawing.Size(122, 38);
             this.panel2.TabIndex = 6;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.logouticonw;
+            this.pictureBox7.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -104,52 +114,56 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Logout";
             // 
-            // label4
+            // ViewIncomeLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(67, 378);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 22);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "View Income";
+            this.ViewIncomeLbl.AutoSize = true;
+            this.ViewIncomeLbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ViewIncomeLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewIncomeLbl.ForeColor = System.Drawing.Color.White;
+            this.ViewIncomeLbl.Location = new System.Drawing.Point(67, 378);
+            this.ViewIncomeLbl.Name = "ViewIncomeLbl";
+            this.ViewIncomeLbl.Size = new System.Drawing.Size(137, 22);
+            this.ViewIncomeLbl.TabIndex = 19;
+            this.ViewIncomeLbl.Text = "View Income";
+            this.ViewIncomeLbl.Click += new System.EventHandler(this.ViewIncomeLbl_Click);
             // 
-            // label3
+            // ExpenseLbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(76, 310);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 22);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Expense";
+            this.ExpenseLbl.AutoSize = true;
+            this.ExpenseLbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ExpenseLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpenseLbl.ForeColor = System.Drawing.Color.White;
+            this.ExpenseLbl.Location = new System.Drawing.Point(76, 310);
+            this.ExpenseLbl.Name = "ExpenseLbl";
+            this.ExpenseLbl.Size = new System.Drawing.Size(92, 22);
+            this.ExpenseLbl.TabIndex = 18;
+            this.ExpenseLbl.Text = "Expense";
+            this.ExpenseLbl.Click += new System.EventHandler(this.ExpenseLbl_Click);
             // 
-            // label2
+            // incomeLbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(76, 239);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 22);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Income";
+            this.incomeLbl.AutoSize = true;
+            this.incomeLbl.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.incomeLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeLbl.ForeColor = System.Drawing.Color.White;
+            this.incomeLbl.Location = new System.Drawing.Point(76, 239);
+            this.incomeLbl.Name = "incomeLbl";
+            this.incomeLbl.Size = new System.Drawing.Size(83, 22);
+            this.incomeLbl.TabIndex = 17;
+            this.incomeLbl.Text = "Income";
+            this.incomeLbl.Click += new System.EventHandler(this.incomeLbl_Click);
             // 
-            // label1
+            // dashboardLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(67, 170);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 22);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Dashboard";
+            this.dashboardLbl.AutoSize = true;
+            this.dashboardLbl.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardLbl.ForeColor = System.Drawing.Color.White;
+            this.dashboardLbl.Location = new System.Drawing.Point(67, 170);
+            this.dashboardLbl.Name = "dashboardLbl";
+            this.dashboardLbl.Size = new System.Drawing.Size(118, 22);
+            this.dashboardLbl.TabIndex = 16;
+            this.dashboardLbl.Text = "Dashboard";
+            this.dashboardLbl.Click += new System.EventHandler(this.dashboardLbl_Click);
             // 
             // label9
             // 
@@ -209,40 +223,19 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.ViewIncomeLbl);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.ExpenseLbl);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.incomeLbl);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dashboardLbl);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 667);
             this.panel1.TabIndex = 66;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.closeicon;
-            this.pictureBox6.Location = new System.Drawing.Point(1083, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(30, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 67;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.logouticonw;
-            this.pictureBox7.Location = new System.Drawing.Point(14, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(29, 30);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -304,6 +297,18 @@
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.closeicon;
+            this.pictureBox6.Location = new System.Drawing.Point(1083, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(30, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 67;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
             // viewExpense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,7 +316,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1131, 667);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ExpenseDGV);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
@@ -322,19 +327,19 @@
             this.Name = "viewExpense";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "viewExpense";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpenseDGV)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,14 +352,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ExpenseDGV;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ViewIncomeLbl;
+        private System.Windows.Forms.Label ExpenseLbl;
+        private System.Windows.Forms.Label incomeLbl;
+        private System.Windows.Forms.Label dashboardLbl;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;

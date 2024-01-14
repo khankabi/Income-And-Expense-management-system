@@ -68,5 +68,10 @@ namespace Income_And_Expense_Tracking_System
                 }
             }
         }
+
+        private void Users_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
