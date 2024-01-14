@@ -20,7 +20,16 @@ namespace Income_And_Expense_Tracking_System
             GetTotInc();
             GetTotExp();  
             GetNumExp();
-            GetNumInc();        }
+            GetNumInc();
+            GetIncDate();
+            GetExpDate();
+            GetMaxInc();
+            GetMaxExp();
+            GetMinInc();
+            GetMinExp();
+
+
+        }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
 
 
@@ -94,6 +103,33 @@ namespace Income_And_Expense_Tracking_System
             NumIncLbl.Text = dt.Rows[0][0].ToString();
             Con.Close();
         }
+        private void GetIncDate()
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncDate) from IncomeTbl where IncUser='" + Login.User + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            DateIncLbl.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+        private void GetMaxInc()
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl where IncUser='" + Login.User + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            MaxIncLbl.Text = "Rs "+dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+        private void GetMinInc()
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Min(IncAmt) from IncomeTbl where IncUser='" + Login.User + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            MinIncLbl.Text = "Rs " + dt.Rows[0][0].ToString();
+            Con.Close();
+        }
         private void GetTotExp()
         {
             Con.Open();
@@ -112,10 +148,46 @@ namespace Income_And_Expense_Tracking_System
             NumExpLbl.Text =dt.Rows[0][0].ToString();
             Con.Close();
         }
-
+        private void GetExpDate()
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(ExpDate) from ExpenseTbl where ExpUser='" + Login.User + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            DateExpLbl.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+        private void GetMaxExp()
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(ExpAmt) from ExpenseTbl where ExpUser='" + Login.User + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            MaxExpLbl.Text = "Rs " + dt.Rows[0][0].ToString();
+            Con.Close();
+        }
+        private void GetMinExp()
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Min(ExpAmt) from ExpenseTbl where ExpUser='" + Login.User + "'", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            MinExpLbl.Text = "Rs " + dt.Rows[0][0].ToString();
+            Con.Close();
+        }
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             Application.Exit(); 
+        }
+
+        private void DateIncLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumIncLbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
