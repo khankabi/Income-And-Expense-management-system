@@ -59,6 +59,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.AddCatLbl = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.AddCatBtn = new System.Windows.Forms.Button();
+            this.RemoveCatBtn = new System.Windows.Forms.Button();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -284,7 +288,7 @@
             // 
             this.IncNameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IncNameTb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncNameTb.Location = new System.Drawing.Point(622, 189);
+            this.IncNameTb.Location = new System.Drawing.Point(622, 170);
             this.IncNameTb.Name = "IncNameTb";
             this.IncNameTb.Size = new System.Drawing.Size(194, 26);
             this.IncNameTb.TabIndex = 38;
@@ -305,7 +309,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(619, 228);
+            this.label7.Location = new System.Drawing.Point(619, 211);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 22);
             this.label7.TabIndex = 39;
@@ -315,7 +319,7 @@
             // 
             this.IncAmtTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IncAmtTb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncAmtTb.Location = new System.Drawing.Point(622, 273);
+            this.IncAmtTb.Location = new System.Drawing.Point(622, 239);
             this.IncAmtTb.Name = "IncAmtTb";
             this.IncAmtTb.Size = new System.Drawing.Size(194, 26);
             this.IncAmtTb.TabIndex = 40;
@@ -325,7 +329,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(619, 318);
+            this.label8.Location = new System.Drawing.Point(619, 287);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(198, 22);
             this.label8.TabIndex = 41;
@@ -335,7 +339,7 @@
             // 
             this.IncDescTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IncDescTb.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncDescTb.Location = new System.Drawing.Point(622, 367);
+            this.IncDescTb.Location = new System.Drawing.Point(622, 314);
             this.IncDescTb.Multiline = true;
             this.IncDescTb.Name = "IncDescTb";
             this.IncDescTb.Size = new System.Drawing.Size(194, 66);
@@ -352,7 +356,7 @@
             "Trading",
             "Tips",
             "Other"});
-            this.CatCb.Location = new System.Drawing.Point(868, 185);
+            this.CatCb.Location = new System.Drawing.Point(878, 169);
             this.CatCb.Name = "CatCb";
             this.CatCb.Size = new System.Drawing.Size(189, 26);
             this.CatCb.TabIndex = 43;
@@ -362,7 +366,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(865, 140);
+            this.label9.Location = new System.Drawing.Point(874, 140);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(112, 22);
             this.label9.TabIndex = 44;
@@ -372,7 +376,7 @@
             // 
             this.IncDate.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.IncDate.Location = new System.Drawing.Point(868, 273);
+            this.IncDate.Location = new System.Drawing.Point(878, 239);
             this.IncDate.Name = "IncDate";
             this.IncDate.Size = new System.Drawing.Size(189, 26);
             this.IncDate.TabIndex = 45;
@@ -382,7 +386,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(865, 228);
+            this.label10.Location = new System.Drawing.Point(874, 211);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 22);
             this.label10.TabIndex = 46;
@@ -395,7 +399,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(868, 367);
+            this.button1.Location = new System.Drawing.Point(623, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 31);
             this.button1.TabIndex = 47;
@@ -427,12 +431,68 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // AddCatLbl
+            // 
+            this.AddCatLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.AddCatLbl.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCatLbl.Location = new System.Drawing.Point(878, 320);
+            this.AddCatLbl.Name = "AddCatLbl";
+            this.AddCatLbl.Size = new System.Drawing.Size(194, 26);
+            this.AddCatLbl.TabIndex = 49;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(874, 287);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 22);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Add Category";
+            // 
+            // AddCatBtn
+            // 
+            this.AddCatBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.AddCatBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddCatBtn.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCatBtn.ForeColor = System.Drawing.Color.Black;
+            this.AddCatBtn.Location = new System.Drawing.Point(900, 352);
+            this.AddCatBtn.Name = "AddCatBtn";
+            this.AddCatBtn.Size = new System.Drawing.Size(58, 31);
+            this.AddCatBtn.TabIndex = 51;
+            this.AddCatBtn.Text = "Add";
+            this.AddCatBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AddCatBtn.UseVisualStyleBackColor = false;
+            this.AddCatBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // RemoveCatBtn
+            // 
+            this.RemoveCatBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.RemoveCatBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RemoveCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RemoveCatBtn.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemoveCatBtn.ForeColor = System.Drawing.Color.Black;
+            this.RemoveCatBtn.Location = new System.Drawing.Point(964, 352);
+            this.RemoveCatBtn.Name = "RemoveCatBtn";
+            this.RemoveCatBtn.Size = new System.Drawing.Size(84, 31);
+            this.RemoveCatBtn.TabIndex = 52;
+            this.RemoveCatBtn.Text = "Remove";
+            this.RemoveCatBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.RemoveCatBtn.UseVisualStyleBackColor = false;
+            this.RemoveCatBtn.Click += new System.EventHandler(this.RemoveCatBtn_Click);
+            // 
             // Income
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1131, 667);
+            this.Controls.Add(this.RemoveCatBtn);
+            this.Controls.Add(this.AddCatBtn);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.AddCatLbl);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
@@ -504,5 +564,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox AddCatLbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button AddCatBtn;
+        private System.Windows.Forms.Button RemoveCatBtn;
     }
 }

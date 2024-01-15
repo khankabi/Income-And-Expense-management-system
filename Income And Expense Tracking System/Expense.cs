@@ -91,5 +91,33 @@ namespace Income_And_Expense_Tracking_System
                 }
             }
         }
+
+        private void AddCatExpBtn_Click(object sender, EventArgs e)
+        {
+            if(AddCatExpLbl.Text!="")
+            {
+                CatCb.Items.Add(AddCatExpLbl.Text);
+                AddCatExpLbl.Text = "";
+                CatCb.Sorted = true;
+            }
+            else
+            {
+                MessageBox.Show("Missing Information, Please Enter Category", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void RemoveCatExpBtn_Click(object sender, EventArgs e)
+        {
+            if (AddCatExpLbl.Text != "")
+            {
+                CatCb.Items.Remove(AddCatExpLbl.Text);
+                AddCatExpLbl.Text = "";
+                CatCb.Sorted = true;
+            }
+            else
+            {
+                MessageBox.Show("Missing Information, Please Enter Category", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

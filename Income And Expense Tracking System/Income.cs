@@ -92,5 +92,34 @@ namespace Income_And_Expense_Tracking_System
             Obj.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (AddCatLbl.Text != "")
+            {
+                CatCb.Items.Add(AddCatLbl.Text);
+                AddCatLbl.Text = "";
+                CatCb.Sorted = true;    
+            }
+            else
+            {
+                MessageBox.Show("Missing Information,Please Enter Category", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void RemoveCatBtn_Click(object sender, EventArgs e)
+        {
+            if (AddCatLbl.Text != "")
+            {
+                CatCb.Items.Remove(AddCatLbl.Text);
+                AddCatLbl.Text = "";
+                CatCb.Sorted = true;
+            }
+            else
+            {
+                MessageBox.Show("Missing Information,Please Enter Category", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
+        }
     }
 }
