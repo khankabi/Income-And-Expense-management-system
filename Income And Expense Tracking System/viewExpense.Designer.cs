@@ -102,6 +102,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 10;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label5
             // 
@@ -113,6 +114,7 @@
             this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Logout";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // ViewIncomeLbl
             // 

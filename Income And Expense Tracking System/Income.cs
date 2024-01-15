@@ -17,6 +17,7 @@ namespace Income_And_Expense_Tracking_System
         public Income()
         {
             InitializeComponent();
+            GetTotInc();
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
         private void Clear()
@@ -48,6 +49,7 @@ namespace Income_And_Expense_Tracking_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Income Added !!!", "Great",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     Con.Close();
+                    GetTotInc();
                     Clear();
 
                 }
@@ -120,6 +122,37 @@ namespace Income_And_Expense_Tracking_System
                 MessageBox.Show("Missing Information,Please Enter Category", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
+        }
+        private void GetTotInc()
+        {
+            try
+            {
+                Con.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("select Sum(IncAmt) from IncomeTbl where IncUser='" + Login.User + "'", Con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                //Inc = Convert.ToInt32(dt.Rows[0][0].ToString());
+                TotIncLbl.Text = "Rs " + dt.Rows[0][0].ToString();
+                Con.Close();
+            }
+            catch (Exception Ex)
+            {
+                Con.Close();
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
         }
     }
 }

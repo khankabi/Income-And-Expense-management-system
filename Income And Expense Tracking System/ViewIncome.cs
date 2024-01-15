@@ -30,8 +30,10 @@ namespace Income_And_Expense_Tracking_System
         private void DispalyIncomes()
         {
             Con.Open();
-            string Query = "Select * from IncomeTbl";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            //string Query = "Select * from IncomeTbl where IncUser'"+ Login.User + "'";
+            //string Query = "Select * from IncomeTbl";
+
+            SqlDataAdapter sda = new SqlDataAdapter("select * from IncomeTbl where IncUser='" + Login.User + "'", Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
             sda.Fill(ds);
@@ -62,6 +64,20 @@ namespace Income_And_Expense_Tracking_System
         private void ViewExpLbl_Click(object sender, EventArgs e)
         {
             viewExpense Obj = new viewExpense();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
             Obj.Show();
             this.Hide();
         }

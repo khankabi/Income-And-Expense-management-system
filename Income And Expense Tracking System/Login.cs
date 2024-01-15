@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Income_And_Expense_Tracking_System
@@ -29,6 +31,7 @@ namespace Income_And_Expense_Tracking_System
         {
             Users Obj = new Users();
             Obj.Show();
+           
 
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
@@ -67,6 +70,19 @@ namespace Income_And_Expense_Tracking_System
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             Application.Exit(); 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBox1.Checked)
+            {
+                PasswordTb.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                PasswordTb.UseSystemPasswordChar = false;
+            }
+            
         }
     }
 }

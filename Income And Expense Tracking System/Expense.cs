@@ -18,6 +18,7 @@ namespace Income_And_Expense_Tracking_System
         public Expense()
         {
             InitializeComponent();
+            GetTotExp();
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)
@@ -81,6 +82,7 @@ namespace Income_And_Expense_Tracking_System
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Expense Added !!!", "Great", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Con.Close();
+                    GetTotExp();
                     Clear();
 
                 }
@@ -117,6 +119,37 @@ namespace Income_And_Expense_Tracking_System
             else
             {
                 MessageBox.Show("Missing Information, Please Enter Category", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+        private void GetTotExp()
+        {
+            try
+            {
+                Con.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("select Sum(ExpAmt) from ExpenseTbl where ExpUser='" + Login.User + "'", Con);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                //Exp = Convert.ToInt32(dt.Rows[0][0].ToString());
+                TotExpLbl.Text = "Rs " + dt.Rows[0][0].ToString();
+                Con.Close();
+            }
+            catch (Exception ex)
+            {
+                Con.Close();
             }
         }
     }

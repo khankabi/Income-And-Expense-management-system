@@ -30,7 +30,7 @@
         {
             this.panel13 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.TotIncLbl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -80,7 +80,7 @@
             // 
             this.panel13.BackColor = System.Drawing.Color.LightCoral;
             this.panel13.Controls.Add(this.label31);
-            this.panel13.Controls.Add(this.label30);
+            this.panel13.Controls.Add(this.TotIncLbl);
             this.panel13.Location = new System.Drawing.Point(308, 189);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(189, 75);
@@ -97,16 +97,16 @@
             this.label31.TabIndex = 12;
             this.label31.Text = "Total Income";
             // 
-            // label30
+            // TotIncLbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Yellow;
-            this.label30.Location = new System.Drawing.Point(17, 43);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(148, 18);
-            this.label30.TabIndex = 11;
-            this.label30.Text = "Amout In Rupees";
+            this.TotIncLbl.AutoSize = true;
+            this.TotIncLbl.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotIncLbl.ForeColor = System.Drawing.Color.Yellow;
+            this.TotIncLbl.Location = new System.Drawing.Point(17, 43);
+            this.TotIncLbl.Name = "TotIncLbl";
+            this.TotIncLbl.Size = new System.Drawing.Size(18, 18);
+            this.TotIncLbl.TabIndex = 11;
+            this.TotIncLbl.Text = "0";
             // 
             // panel1
             // 
@@ -161,6 +161,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 10;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label5
             // 
@@ -172,6 +173,7 @@
             this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Logout";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox10
             // 
@@ -535,7 +537,7 @@
 
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label TotIncLbl;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

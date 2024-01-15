@@ -166,6 +166,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(122, 38);
             this.panel2.TabIndex = 6;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox7
             // 
@@ -176,6 +177,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 10;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // label5
             // 
@@ -187,6 +189,7 @@
             this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Logout";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // ViewIncLbl
             // 
@@ -522,7 +525,7 @@
             this.MaxExpLbl.AutoSize = true;
             this.MaxExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaxExpLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MaxExpLbl.Location = new System.Drawing.Point(17, 55);
+            this.MaxExpLbl.Location = new System.Drawing.Point(17, 44);
             this.MaxExpLbl.Name = "MaxExpLbl";
             this.MaxExpLbl.Size = new System.Drawing.Size(138, 17);
             this.MaxExpLbl.TabIndex = 11;
@@ -554,11 +557,11 @@
             this.MinExpLbl.AutoSize = true;
             this.MinExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinExpLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MinExpLbl.Location = new System.Drawing.Point(17, 55);
+            this.MinExpLbl.Location = new System.Drawing.Point(17, 44);
             this.MinExpLbl.Name = "MinExpLbl";
-            this.MinExpLbl.Size = new System.Drawing.Size(138, 17);
+            this.MinExpLbl.Size = new System.Drawing.Size(148, 17);
             this.MinExpLbl.TabIndex = 11;
-            this.MinExpLbl.Text = "Amout In Rupees";
+            this.MinExpLbl.Text = "Amount In Rupees";
             // 
             // label19
             // 
@@ -586,11 +589,11 @@
             this.MinIncLbl.AutoSize = true;
             this.MinIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinIncLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MinIncLbl.Location = new System.Drawing.Point(17, 55);
+            this.MinIncLbl.Location = new System.Drawing.Point(17, 39);
             this.MinIncLbl.Name = "MinIncLbl";
-            this.MinIncLbl.Size = new System.Drawing.Size(138, 17);
+            this.MinIncLbl.Size = new System.Drawing.Size(148, 17);
             this.MinIncLbl.TabIndex = 11;
-            this.MinIncLbl.Text = "Amout In Rupees";
+            this.MinIncLbl.Text = "Amount In Rupees";
             this.MinIncLbl.Click += new System.EventHandler(this.label20_Click);
             // 
             // label21
@@ -611,7 +614,7 @@
             this.panel9.Controls.Add(this.label23);
             this.panel9.Location = new System.Drawing.Point(887, 300);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(168, 82);
+            this.panel9.Size = new System.Drawing.Size(216, 82);
             this.panel9.TabIndex = 21;
             // 
             // BestIncCatLbl
@@ -619,11 +622,11 @@
             this.BestIncCatLbl.AutoSize = true;
             this.BestIncCatLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BestIncCatLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.BestIncCatLbl.Location = new System.Drawing.Point(17, 55);
+            this.BestIncCatLbl.Location = new System.Drawing.Point(17, 39);
             this.BestIncCatLbl.Name = "BestIncCatLbl";
-            this.BestIncCatLbl.Size = new System.Drawing.Size(138, 17);
+            this.BestIncCatLbl.Size = new System.Drawing.Size(106, 17);
             this.BestIncCatLbl.TabIndex = 11;
-            this.BestIncCatLbl.Text = "Amout In Rupees";
+            this.BestIncCatLbl.Text = "BestCategory";
             // 
             // label23
             // 
@@ -643,7 +646,7 @@
             this.panel10.Controls.Add(this.label25);
             this.panel10.Location = new System.Drawing.Point(887, 184);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(168, 82);
+            this.panel10.Size = new System.Drawing.Size(216, 82);
             this.panel10.TabIndex = 19;
             // 
             // LastExpLbl
@@ -651,11 +654,11 @@
             this.LastExpLbl.AutoSize = true;
             this.LastExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastExpLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.LastExpLbl.Location = new System.Drawing.Point(3, 60);
+            this.LastExpLbl.Location = new System.Drawing.Point(3, 44);
             this.LastExpLbl.Name = "LastExpLbl";
-            this.LastExpLbl.Size = new System.Drawing.Size(138, 17);
+            this.LastExpLbl.Size = new System.Drawing.Size(42, 17);
             this.LastExpLbl.TabIndex = 11;
-            this.LastExpLbl.Text = "Amout In Rupees";
+            this.LastExpLbl.Text = "Date";
             // 
             // label25
             // 
@@ -683,11 +686,11 @@
             this.BalanceLbl.AutoSize = true;
             this.BalanceLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BalanceLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.BalanceLbl.Location = new System.Drawing.Point(17, 55);
+            this.BalanceLbl.Location = new System.Drawing.Point(17, 37);
             this.BalanceLbl.Name = "BalanceLbl";
-            this.BalanceLbl.Size = new System.Drawing.Size(138, 17);
+            this.BalanceLbl.Size = new System.Drawing.Size(148, 17);
             this.BalanceLbl.TabIndex = 11;
-            this.BalanceLbl.Text = "Amout In Rupees";
+            this.BalanceLbl.Text = "Amount In Rupees";
             // 
             // label27
             // 
@@ -707,7 +710,7 @@
             this.panel12.Controls.Add(this.label29);
             this.panel12.Location = new System.Drawing.Point(887, 77);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(168, 82);
+            this.panel12.Size = new System.Drawing.Size(216, 82);
             this.panel12.TabIndex = 18;
             // 
             // LastIncLbl
@@ -715,11 +718,11 @@
             this.LastIncLbl.AutoSize = true;
             this.LastIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastIncLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.LastIncLbl.Location = new System.Drawing.Point(1, 59);
+            this.LastIncLbl.Location = new System.Drawing.Point(3, 46);
             this.LastIncLbl.Name = "LastIncLbl";
-            this.LastIncLbl.Size = new System.Drawing.Size(138, 17);
+            this.LastIncLbl.Size = new System.Drawing.Size(42, 17);
             this.LastIncLbl.TabIndex = 11;
-            this.LastIncLbl.Text = "Amout In Rupees";
+            this.LastIncLbl.Text = "Date";
             // 
             // label29
             // 
@@ -739,7 +742,7 @@
             this.panel13.Controls.Add(this.BestExpCatLbl);
             this.panel13.Location = new System.Drawing.Point(887, 407);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(168, 82);
+            this.panel13.Size = new System.Drawing.Size(216, 82);
             this.panel13.TabIndex = 22;
             // 
             // label31
@@ -758,11 +761,11 @@
             this.BestExpCatLbl.AutoSize = true;
             this.BestExpCatLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BestExpCatLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.BestExpCatLbl.Location = new System.Drawing.Point(17, 55);
+            this.BestExpCatLbl.Location = new System.Drawing.Point(17, 43);
             this.BestExpCatLbl.Name = "BestExpCatLbl";
-            this.BestExpCatLbl.Size = new System.Drawing.Size(138, 17);
+            this.BestExpCatLbl.Size = new System.Drawing.Size(111, 17);
             this.BestExpCatLbl.TabIndex = 11;
-            this.BestExpCatLbl.Text = "Amout In Rupees";
+            this.BestExpCatLbl.Text = "Best Category";
             // 
             // label32
             // 
