@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.IncCat = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.IncName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ViewExpLbl = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,10 +50,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.SearchBtn = new System.Windows.Forms.Button();
             this.RefreshBtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -62,7 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IncomeDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -76,28 +74,6 @@
             this.label11.TabIndex = 63;
             this.label11.Text = "VIEW INCOME DETAILS";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(663, 108);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 22);
-            this.label9.TabIndex = 59;
-            this.label9.Text = "Categories";
-            this.label9.Visible = false;
-            // 
-            // IncCat
-            // 
-            this.IncCat.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncCat.FormattingEnabled = true;
-            this.IncCat.Location = new System.Drawing.Point(794, 104);
-            this.IncCat.Name = "IncCat";
-            this.IncCat.Size = new System.Drawing.Size(189, 26);
-            this.IncCat.TabIndex = 58;
-            this.IncCat.Visible = false;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -105,15 +81,15 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(280, 108);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 22);
+            this.label6.Size = new System.Drawing.Size(173, 22);
             this.label6.TabIndex = 49;
-            this.label6.Text = "Income Name";
+            this.label6.Text = "Income Category";
             // 
             // IncName
             // 
             this.IncName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IncName.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncName.Location = new System.Drawing.Point(441, 104);
+            this.IncName.Location = new System.Drawing.Point(459, 104);
             this.IncName.Name = "IncName";
             this.IncName.Size = new System.Drawing.Size(194, 26);
             this.IncName.TabIndex = 53;
@@ -171,6 +147,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(218, 667);
             this.panel1.TabIndex = 50;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.mainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // ViewExpLbl
             // 
@@ -332,19 +319,9 @@
             this.RefreshBtn.UseVisualStyleBackColor = false;
             this.RefreshBtn.Click += new System.EventHandler(this.RefreshBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.mainLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
             // ViewIncome
             // 
+            this.AcceptButton = this.SearchBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -353,8 +330,6 @@
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.IncomeDGV);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.IncCat);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.IncName);
             this.Controls.Add(this.panel1);
@@ -369,6 +344,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -376,7 +352,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IncomeDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,8 +360,6 @@
         #endregion
 
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox IncCat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox IncName;
         private System.Windows.Forms.PictureBox pictureBox7;

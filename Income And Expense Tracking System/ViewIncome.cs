@@ -86,7 +86,7 @@ namespace Income_And_Expense_Tracking_System
         {
             
                 Con.Open();
-                string Query = "select * from IncomeTbl where IncUser='" + Login.User + "' AND  IncName='" + IncName.Text + "'";            
+                string Query = "select * from IncomeTbl where IncUser='" + Login.User + "' AND  IncCat='" + IncName.Text + "'";            
                 SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
                 SqlCommandBuilder builder = new SqlCommandBuilder(sda);
                 var ds = new DataSet();

@@ -82,7 +82,7 @@ namespace Income_And_Expense_Tracking_System
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             Con.Open();
-            string Query = "select * from ExpenseTbl where ExpUser='" + Login.User + "' AND  ExpName='" + ExpName.Text + "'";
+            string Query = "select * from ExpenseTbl where ExpUser='" + Login.User + "' AND  ExpCat='" + ExpName.Text + "'";
             SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
