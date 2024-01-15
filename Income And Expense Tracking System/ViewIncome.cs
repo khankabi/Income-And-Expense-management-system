@@ -81,5 +81,26 @@ namespace Income_And_Expense_Tracking_System
             Obj.Show();
             this.Hide();
         }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            
+                Con.Open();
+                string Query = "select * from IncomeTbl where IncUser='" + Login.User + "' AND  IncName='" + IncName.Text + "'";            
+                SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+                var ds = new DataSet();
+                sda.Fill(ds);
+                IncomeDGV.DataSource = ds.Tables[0];
+                Con.Close();
+            
+        }
+
+        private void RefreshBtn_Click(object sender, EventArgs e)
+        {
+            ViewIncome Obj= new ViewIncome();   
+            Obj.Show(); 
+            this.Hide();    
+        }
     }
 }

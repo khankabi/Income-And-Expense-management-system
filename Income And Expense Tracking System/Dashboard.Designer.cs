@@ -88,6 +88,7 @@
             this.BestExpCatLbl = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel2.SuspendLayout();
@@ -284,10 +285,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.eyes_doodles_art_127935_1366x768;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.mainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -302,7 +304,7 @@
             this.panel3.Controls.Add(this.TotIncLbl);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Location = new System.Drawing.Point(252, 77);
+            this.panel3.Location = new System.Drawing.Point(250, 143);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(336, 189);
             this.panel3.TabIndex = 6;
@@ -397,7 +399,7 @@
             this.panel4.Controls.Add(this.TotExpLbl);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.pictureBox9);
-            this.panel4.Location = new System.Drawing.Point(252, 300);
+            this.panel4.Location = new System.Drawing.Point(250, 366);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(336, 189);
             this.panel4.TabIndex = 14;
@@ -483,9 +485,9 @@
             this.panel5.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel5.Controls.Add(this.MaxIncLbl);
             this.panel5.Controls.Add(this.label17);
-            this.panel5.Location = new System.Drawing.Point(645, 77);
+            this.panel5.Location = new System.Drawing.Point(643, 155);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(168, 82);
+            this.panel5.Size = new System.Drawing.Size(168, 63);
             this.panel5.TabIndex = 14;
             // 
             // MaxIncLbl
@@ -493,7 +495,7 @@
             this.MaxIncLbl.AutoSize = true;
             this.MaxIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaxIncLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MaxIncLbl.Location = new System.Drawing.Point(17, 44);
+            this.MaxIncLbl.Location = new System.Drawing.Point(17, 25);
             this.MaxIncLbl.Name = "MaxIncLbl";
             this.MaxIncLbl.Size = new System.Drawing.Size(138, 17);
             this.MaxIncLbl.TabIndex = 11;
@@ -515,9 +517,9 @@
             this.panel6.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel6.Controls.Add(this.MaxExpLbl);
             this.panel6.Controls.Add(this.label15);
-            this.panel6.Location = new System.Drawing.Point(645, 184);
+            this.panel6.Location = new System.Drawing.Point(643, 239);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(168, 82);
+            this.panel6.Size = new System.Drawing.Size(168, 56);
             this.panel6.TabIndex = 15;
             // 
             // MaxExpLbl
@@ -525,7 +527,7 @@
             this.MaxExpLbl.AutoSize = true;
             this.MaxExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaxExpLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MaxExpLbl.Location = new System.Drawing.Point(17, 44);
+            this.MaxExpLbl.Location = new System.Drawing.Point(17, 23);
             this.MaxExpLbl.Name = "MaxExpLbl";
             this.MaxExpLbl.Size = new System.Drawing.Size(138, 17);
             this.MaxExpLbl.TabIndex = 11;
@@ -547,9 +549,9 @@
             this.panel7.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel7.Controls.Add(this.MinExpLbl);
             this.panel7.Controls.Add(this.label19);
-            this.panel7.Location = new System.Drawing.Point(645, 407);
+            this.panel7.Location = new System.Drawing.Point(643, 398);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(168, 82);
+            this.panel7.Size = new System.Drawing.Size(168, 51);
             this.panel7.TabIndex = 17;
             // 
             // MinExpLbl
@@ -557,7 +559,7 @@
             this.MinExpLbl.AutoSize = true;
             this.MinExpLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinExpLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MinExpLbl.Location = new System.Drawing.Point(17, 44);
+            this.MinExpLbl.Location = new System.Drawing.Point(17, 25);
             this.MinExpLbl.Name = "MinExpLbl";
             this.MinExpLbl.Size = new System.Drawing.Size(148, 17);
             this.MinExpLbl.TabIndex = 11;
@@ -579,9 +581,9 @@
             this.panel8.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel8.Controls.Add(this.MinIncLbl);
             this.panel8.Controls.Add(this.label21);
-            this.panel8.Location = new System.Drawing.Point(645, 300);
+            this.panel8.Location = new System.Drawing.Point(643, 317);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(168, 82);
+            this.panel8.Size = new System.Drawing.Size(168, 54);
             this.panel8.TabIndex = 16;
             // 
             // MinIncLbl
@@ -589,7 +591,7 @@
             this.MinIncLbl.AutoSize = true;
             this.MinIncLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinIncLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.MinIncLbl.Location = new System.Drawing.Point(17, 39);
+            this.MinIncLbl.Location = new System.Drawing.Point(14, 27);
             this.MinIncLbl.Name = "MinIncLbl";
             this.MinIncLbl.Size = new System.Drawing.Size(148, 17);
             this.MinIncLbl.TabIndex = 11;
@@ -612,7 +614,7 @@
             this.panel9.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel9.Controls.Add(this.BestIncCatLbl);
             this.panel9.Controls.Add(this.label23);
-            this.panel9.Location = new System.Drawing.Point(887, 300);
+            this.panel9.Location = new System.Drawing.Point(885, 366);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(216, 82);
             this.panel9.TabIndex = 21;
@@ -644,7 +646,7 @@
             this.panel10.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel10.Controls.Add(this.LastExpLbl);
             this.panel10.Controls.Add(this.label25);
-            this.panel10.Location = new System.Drawing.Point(887, 184);
+            this.panel10.Location = new System.Drawing.Point(885, 250);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(216, 82);
             this.panel10.TabIndex = 19;
@@ -676,9 +678,9 @@
             this.panel11.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel11.Controls.Add(this.BalanceLbl);
             this.panel11.Controls.Add(this.label27);
-            this.panel11.Location = new System.Drawing.Point(252, 509);
+            this.panel11.Location = new System.Drawing.Point(643, 485);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(168, 82);
+            this.panel11.Size = new System.Drawing.Size(168, 54);
             this.panel11.TabIndex = 20;
             // 
             // BalanceLbl
@@ -686,7 +688,7 @@
             this.BalanceLbl.AutoSize = true;
             this.BalanceLbl.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BalanceLbl.ForeColor = System.Drawing.Color.Yellow;
-            this.BalanceLbl.Location = new System.Drawing.Point(17, 37);
+            this.BalanceLbl.Location = new System.Drawing.Point(14, 24);
             this.BalanceLbl.Name = "BalanceLbl";
             this.BalanceLbl.Size = new System.Drawing.Size(148, 17);
             this.BalanceLbl.TabIndex = 11;
@@ -708,7 +710,7 @@
             this.panel12.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel12.Controls.Add(this.LastIncLbl);
             this.panel12.Controls.Add(this.label29);
-            this.panel12.Location = new System.Drawing.Point(887, 77);
+            this.panel12.Location = new System.Drawing.Point(885, 143);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(216, 82);
             this.panel12.TabIndex = 18;
@@ -740,7 +742,7 @@
             this.panel13.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel13.Controls.Add(this.label31);
             this.panel13.Controls.Add(this.BestExpCatLbl);
-            this.panel13.Location = new System.Drawing.Point(887, 407);
+            this.panel13.Location = new System.Drawing.Point(885, 473);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(216, 82);
             this.panel13.TabIndex = 22;
@@ -790,12 +792,24 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Lucida Handwriting", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(408, 631);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(638, 27);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "By Samir Yasin Shaikh From Third Year BBA(CA)";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1131, 667);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel9);
@@ -918,6 +932,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label DateExpLbl;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label2;
     }
 }
 

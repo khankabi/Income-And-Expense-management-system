@@ -78,5 +78,24 @@ namespace Income_And_Expense_Tracking_System
             Obj.Show();
             this.Hide();
         }
+
+        private void SearchBtn_Click(object sender, EventArgs e)
+        {
+            Con.Open();
+            string Query = "select * from ExpenseTbl where ExpUser='" + Login.User + "' AND  ExpName='" + ExpName.Text + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExpenseDGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
+
+        private void RefreshBtn_Click(object sender, EventArgs e)
+        {
+            viewExpense Obj = new viewExpense();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

@@ -37,7 +37,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ViewIncLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ExpLbl = new System.Windows.Forms.Label();
@@ -63,17 +62,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.AddCatBtn = new System.Windows.Forms.Button();
             this.RemoveCatBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel13.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel13
@@ -111,10 +111,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Turquoise;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label33);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.ViewIncLbl);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.ExpLbl);
@@ -184,16 +184,6 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 20;
             this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.eyes_doodles_art_127935_1366x768;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // ViewIncLbl
             // 
@@ -403,7 +393,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(623, 400);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 31);
+            this.button1.Size = new System.Drawing.Size(193, 31);
             this.button1.TabIndex = 47;
             this.button1.Text = "Save Income";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -460,9 +450,9 @@
             this.AddCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddCatBtn.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddCatBtn.ForeColor = System.Drawing.Color.Black;
-            this.AddCatBtn.Location = new System.Drawing.Point(900, 352);
+            this.AddCatBtn.Location = new System.Drawing.Point(878, 352);
             this.AddCatBtn.Name = "AddCatBtn";
-            this.AddCatBtn.Size = new System.Drawing.Size(58, 31);
+            this.AddCatBtn.Size = new System.Drawing.Size(87, 31);
             this.AddCatBtn.TabIndex = 51;
             this.AddCatBtn.Text = "Add";
             this.AddCatBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -476,7 +466,7 @@
             this.RemoveCatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveCatBtn.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveCatBtn.ForeColor = System.Drawing.Color.Black;
-            this.RemoveCatBtn.Location = new System.Drawing.Point(964, 352);
+            this.RemoveCatBtn.Location = new System.Drawing.Point(988, 352);
             this.RemoveCatBtn.Name = "RemoveCatBtn";
             this.RemoveCatBtn.Size = new System.Drawing.Size(84, 31);
             this.RemoveCatBtn.TabIndex = 52;
@@ -484,6 +474,17 @@
             this.RemoveCatBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.RemoveCatBtn.UseVisualStyleBackColor = false;
             this.RemoveCatBtn.Click += new System.EventHandler(this.RemoveCatBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Income_And_Expense_Tracking_System.Properties.Resources.mainLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(51, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
             // Income
             // 
@@ -522,12 +523,12 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -539,7 +540,6 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label TotIncLbl;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
@@ -570,5 +570,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button AddCatBtn;
         private System.Windows.Forms.Button RemoveCatBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

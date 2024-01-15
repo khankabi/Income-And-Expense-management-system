@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace Income_And_Expense_Tracking_System
 {
@@ -40,12 +41,41 @@ namespace Income_And_Expense_Tracking_System
             PhoneTb.Text = "";
             AddressTb.Text = "";
         }
+        /// <summary>
+        /// Determines whether the username meets conditions.
+        /// Username conditions:
+        /// Must be 1 to 24 character in length
+        /// Must start with letter a-zA-Z
+        /// May contain letters, numbers or '.','-' or '_'
+        /// Must not end in '.','-','._' or '-_' 
+        /// </summary>
+        /// <param name="userName">proposed username</param>
+        /// <returns>True if the username is valid</returns>
+        private static Regex sUserNameAllowedRegEx = new Regex(@"^[a-zA-Z]{1}[a-zA-Z0-9\._\-]{0,23}[^.-]$", RegexOptions.Compiled);
+        private static Regex sUserNameIllegalEndingRegEx = new Regex(@"(\.|\-|\._|\-_)$", RegexOptions.Compiled);
+        public static bool IsUserNameAllowed(string userName)
+        {
+            if (string.IsNullOrEmpty(userName)
+                || !sUserNameAllowedRegEx.IsMatch(userName)
+                || sUserNameIllegalEndingRegEx.IsMatch(userName))
+
+            {
+                return false;
+            }
+            return true;
+        }
         private void AddBtn_Click(object sender, EventArgs e)
         {
             if(UnameTb.Text == "" || PhoneTb.Text == "" || PasswordTb.Text == "" || AddressTb.Text == "")
             {
                 MessageBox.Show("Missing Information","ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }else
+            }
+            else if (!IsUserNameAllowed(UnameTb.Text))
+            {
+                MessageBox.Show("UserName is Not Allowed, It must start with letter and may ends with number or letter no special character is allowed", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                UnameTb.Text = "";
+            }
+            else
             {
                 try
                 {

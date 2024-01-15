@@ -173,6 +173,16 @@ namespace Income_And_Expense_Tracking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mainLogo {
+            get {
+                object obj = ResourceManager.GetObject("mainLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sblackicon {
             get {
                 object obj = ResourceManager.GetObject("sblackicon", resourceCulture);

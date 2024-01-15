@@ -118,26 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="sblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iwhiteicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iwhiteicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dwhiteicone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dwhiteicone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logouticonw" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logouticonw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logouticon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logouticon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="closeicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drsicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drsicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eyes_doodles_art_127935_1366x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eyes_doodles_art_127935_1366x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,16 +139,25 @@
   <data name="swhiteicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\swhiteicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logouticon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logouticon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logouticonw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logouticonw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="closeicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sblackicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sblackicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dwhiteicone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dwhiteicone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ewhiteicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ewhiteicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="drsicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\drsicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iwhiteicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iwhiteicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

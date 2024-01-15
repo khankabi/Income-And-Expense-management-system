@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Text.RegularExpressions;
 
 
 namespace Income_And_Expense_Tracking_System
@@ -36,12 +37,40 @@ namespace Income_And_Expense_Tracking_System
         }
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
         public static string User;
+        /// <summary>
+        /// Determines whether the username meets conditions.
+        /// Username conditions:
+        /// Must be 1 to 24 character in length
+        /// Must start with letter a-zA-Z
+        /// May contain letters, numbers or '.','-' or '_'
+        /// Must not end in '.','-','._' or '-_' 
+        /// </summary>
+        /// <param name="userName">proposed username</param>
+        /// <returns>True if the username is valid</returns>
+        private static Regex sUserNameAllowedRegEx = new Regex(@"^[a-zA-Z]{1}[a-zA-Z0-9\._\-]{0,23}[^.-]$", RegexOptions.Compiled);
+        private static Regex sUserNameIllegalEndingRegEx = new Regex(@"(\.|\-|\._|\-_)$", RegexOptions.Compiled);
+        public static bool IsUserNameAllowed(string userName)
+        {
+            if (string.IsNullOrEmpty(userName)
+                || !sUserNameAllowedRegEx.IsMatch(userName)
+                || sUserNameIllegalEndingRegEx.IsMatch(userName))
+
+            {
+                return false;
+            }
+            return true;
+        }
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             if (UnameTb.Text==""||PasswordTb.Text=="")
             {
                 MessageBox.Show("Enter both username and password !!!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }else
+            }
+            else if(!IsUserNameAllowed(UnameTb.Text))
+            {
+                MessageBox.Show("Not allowed","ERROR",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             {
                 Con.Open();
                 SqlDataAdapter sda = new SqlDataAdapter("select count(*) from UserTbl where UName='" + UnameTb.Text + "' and UPass='" + PasswordTb.Text + "'", Con);
@@ -51,7 +80,7 @@ namespace Income_And_Expense_Tracking_System
                 {
                     User = UnameTb.Text;
                     Dashboard Obj = new Dashboard();
-                    MessageBox.Show("Login Successful");
+                    MessageBox.Show("Login Successful","WELCOME",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     Obj.Show();
                     this.Hide();
                     Con.Close();
@@ -82,6 +111,10 @@ namespace Income_And_Expense_Tracking_System
             {
                 PasswordTb.UseSystemPasswordChar = false;
             }
+            
+        }
+        private void Login_Load(object sender, EventArgs e)
+        {
             
         }
     }
