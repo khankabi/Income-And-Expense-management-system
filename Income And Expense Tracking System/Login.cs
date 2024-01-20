@@ -79,10 +79,11 @@ namespace Income_And_Expense_Tracking_System
                 if (dt.Rows[0][0].ToString() == "1")
                 {
                     User = UnameTb.Text;
-                    Dashboard Obj = new Dashboard();
-                    MessageBox.Show("Login Successful","WELCOME",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    //Dashboard Obj = new Dashboard();
+                    Progress_Bar Obj = new Progress_Bar();
                     Obj.Show();
                     this.Hide();
+                    //MessageBox.Show("Login Successful","WELCOME",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     Con.Close();
                 }
                 else
