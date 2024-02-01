@@ -19,7 +19,7 @@ namespace Income_And_Expense_Tracking_System
             InitializeComponent();
             GetTotInc();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Desktop\.NET FRAMEWORK\Income-And-Expense-management-system\database\IETSDb.mdf;Integrated Security=True;Connect Timeout=30");
         private void Clear()
         {
             IncNameTb.Text = "";
